@@ -1,0 +1,5 @@
+title: Medewerkers
+modelClass: BsbVolmachten\Team\Models\Medewerkers
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

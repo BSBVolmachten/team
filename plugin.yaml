@@ -1,0 +1,17 @@
+plugin:
+    name: 'bsbvolmachten.team::lang.plugin.name'
+    description: 'bsbvolmachten.team::lang.plugin.description'
+    author: 'BSB Volmachten'
+    icon: oc-icon-users
+    homepage: ''
+permissions:
+    manage-medewerkers:
+        tab: 'Medewerkers Beheren'
+        label: 'Medewerkers Beheren'
+navigation:
+    main-menu-item:
+        label: Medewerkers
+        url: bsbvolmachten/team/medewerkers
+        icon: icon-users
+        permissions:
+            - manage-medewerkers

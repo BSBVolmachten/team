@@ -1,0 +1,59 @@
+fields:
+    image:
+        label: Foto
+        mode: image
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    name:
+        label: Naam
+        span: left
+        required: 1
+        type: text
+    job:
+        label: Functie
+        span: left
+        required: 1
+        type: text
+    description:
+        label: 'Korte Omschrijving'
+        size: small
+        span: left
+        required: 1
+        attributes:
+            maxlength: '160'
+        type: textarea
+        comment: 'Max 160 Karakters'
+    phone:
+        label: Telefoonnummer
+        span: left
+        type: text
+    email:
+        label: Email
+        span: left
+        type: text
+tabs:
+    fields:
+        facebook:
+            label: 'Facebook Link'
+            span: left
+            type: text
+            tab: 'Social Media'
+        twitter:
+            label: 'Twitter Link'
+            span: left
+            type: text
+            tab: 'Social Media'
+        linkedin:
+            label: 'Linkedin Link'
+            span: left
+            type: text
+            tab: 'Social Media'
+        skype:
+            label: 'Skype Link'
+            span: left
+            type: text
+            tab: 'Social Media'

@@ -1,0 +1,17 @@
+name: Medewerkers
+modelClass: BsbVolmachten\Team\Models\Medewerkers
+form: $/bsbvolmachten/team/models/medewerkers/fields.yaml
+defaultRedirect: bsbvolmachten/team/medewerkers
+create:
+    title: 'Medewerker Toevoegen'
+    redirect: 'bsbvolmachten/team/medewerkers/update/:id'
+    redirectClose: bsbvolmachten/team/medewerkers
+    flashSave: 'Medewerker Opgeslagen'
+update:
+    title: 'Medewerker Bewerken'
+    redirect: bsbvolmachten/team/medewerkers
+    redirectClose: bsbvolmachten/team/medewerkers
+    flashSave: 'Medewerker Opgeslagen'
+    flashDelete: 'Medewerker Verwijderd'
+preview:
+    title: 'Medewerker Weergeven'
