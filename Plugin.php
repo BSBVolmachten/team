@@ -1,4 +1,4 @@
-<?php namespace BsbVolmachten\Team;
+<?php namespace Bsbvolmachten\Team;
 
 use System\Classes\PluginBase;
 

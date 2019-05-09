@@ -6,3 +6,5 @@
 1.0.3:
     - 'Updated table bsbvolmachten_team_'
     - builder_table_update_bsbvolmachten_team_medewerker.php
+1.0.4:
+    - 'Changed namespace from BsbVolmachten to Bsbvolmachten'
