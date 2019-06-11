@@ -13,3 +13,5 @@
     - bsbvolmachten_fix_sort_order.php
 1.6.0:
     - 'Added component to plugin'
+1.6.1:
+    - 'Component bugfix'

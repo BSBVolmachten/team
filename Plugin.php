@@ -7,7 +7,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Bsbvolmachten\Contentblocks\Components\Medewerkers' => 'medewerkers',
+            'Bsbvolmachten\Team\Components\Medewerkers' => 'medewerkers',
         ];
     }
 
