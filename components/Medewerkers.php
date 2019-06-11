@@ -1,8 +1,8 @@
 <?php
-namespace Bsbvolmachten\Medewerkers\components;
+namespace Bsbvolmachten\Team\components;
 
 use Cms\Classes\ComponentBase;
-use Bsbvolmachten\Medewerkers\Models\Medewerkers as Medewerker;
+use Bsbvolmachten\Team\Models\Medewerkers as Medewerker;
 
 class Medewerkers extends ComponentBase {
 
