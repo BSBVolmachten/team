@@ -16,6 +16,12 @@ class Medewerkers extends ComponentBase {
 
     public function medewerkers()
     {
-        return Medewerker::orderBy('sort_order', 'ASC')->get();
+        $team = Medewerker::orderBy('sort_order', 'ASC')->get();
+
+        if($team->isEmpty()) {
+            return false;
+        } else {
+            return $team;
+        }
     }
 }

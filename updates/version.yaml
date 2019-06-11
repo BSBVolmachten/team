@@ -15,3 +15,5 @@
     - 'Added component to plugin'
 1.6.1:
     - 'Component bugfix'
+1.6.2:
+    - 'Return false if no records are found'
