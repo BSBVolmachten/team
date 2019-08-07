@@ -1,0 +1,76 @@
+{% if medewerkers %}
+<section class="team team-layout style-2 style-1">
+    <div class="container">
+        <div class="heading">
+            <h3 class="heading-section">Ons Team</h3>
+        </div>
+        <div class="row">
+            {% for werknemer in medewerkers %}
+            <div class="col-lg-6 col-md-12">
+                <div class="team-item style-1 match-item">
+                    <div class="team-image">
+                        <img class="img-responsive" src="{{ werknemer.image.thumb(260,319,{'mode':'crop'}) }}" alt="{{ werknemer.name }}" />
+                    </div>
+                    <div class="team-info">
+                        <div class="name">
+                            <a href="#">{{ werknemer.name }}</a>
+                        </div>
+                        <div class="title-job">
+                            <span>{{ werknemer.job }}</span>
+                        </div>
+                        <div class="content">
+                            <p>{{ werknemer.description }}</p>
+                        </div>
+                        {% if werknemer.phone %}
+                        <div class="phone">
+                            <i class="fa fa-phone"></i>
+                            <span><a href="tel:{{ werknemer.phone }}">{{ werknemer.phone }}</a></span>
+                        </div>
+                        {% endif %}
+                        {% if werknemer.facebook or werknemer.twitter or medewerker.skype or medewerker.linkedin %}
+                        <ul class="social-list">
+                            {% if werknemer.email %}
+                            <li>
+                                <a href="mailto:{{ html_email(werknemer.email) }}">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if werknemer.facebook %}
+                            <li>
+                                <a target="_blank" href="{{ werknemer.facebook }}">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if werknemer.twitter %}
+                            <li>
+                                <a target="_blank" href="{{ werknemer.twitter }}">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if werknemer.skype %}
+                            <li>
+                                <a target="_blank" href="{{ werknemer.skype }}">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if werknemer.linkedin %}
+                            <li>
+                                <a target="_blank" href="{{ werknemer.linkedin }}">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
