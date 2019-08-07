@@ -14,14 +14,17 @@ class Medewerkers extends ComponentBase {
         ];
     }
 
-    public function medewerkers()
-    {
-        $team = Medewerker::orderBy('sort_order', 'ASC')->get();
-
-        if($team->isEmpty()) {
-            return false;
+    public function onRun() {
+        $team = $this->getEmployee();
+        if ($team->isNotEmpty()) {
+            $this->page['medewerkers'] = $team;
         } else {
-            return $team;
+            $this->page['medewerkers'] = false;
         }
+    }
+
+    public function getEmployee()
+    {
+        return Medewerker::orderBy('sort_order', 'ASC')->get();
     }
 }

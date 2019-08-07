@@ -17,3 +17,5 @@
     - 'Component bugfix'
 1.6.2:
     - 'Return false if no records are found'
+1.6.3:
+    - 'Optimised component'
